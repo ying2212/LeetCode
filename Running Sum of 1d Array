@@ -1,0 +1,17 @@
+#include <vector>
+class Solution {
+public:
+    vector<int> runningSum(vector<int>& nums) {
+        std::vector<int> sums; //initialize a new vector
+        int sumindex = 0;
+        //loop through every integer of nums
+        for(int i = 0; i < nums.size(); i++){
+            //add every previous integer 
+            sumindex += nums[i];
+            sums.push_back(sumindex);
+        }
+        //return sums of vector
+        return sums;
+    }
+};
+
