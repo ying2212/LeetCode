@@ -1,0 +1,9 @@
+class Solution {
+public:
+    void reverseString(vector<char>& s) {
+        std::reverse(s.begin(),s.end());
+        for(int i = 0;i < s.size();i++){
+            std::cout << s[i];
+        }
+    }
+};
